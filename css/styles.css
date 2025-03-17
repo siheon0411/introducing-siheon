@@ -1,0 +1,271 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f5ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* 카드 스타일 버튼 */
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 120px;
+    height: 120px;
+    text-decoration: none;
+    background: #dabfff;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background 0.3s;
+}
+
+.nav-button:hover {
+    background: #b39ddb;
+    transform: scale(1.05);
+}
+
+/* 아이콘 크기 조정 */
+.nav-button span {
+    font-size: 24px;
+}
+
+/* 기존 스타일 유지 */
+
+/* 좌상단 고정된 버튼 스타일 */
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #b39ddb;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* 마우스를 올렸을 때 */
+.back-button:hover {
+    background: #5a009d;
+    transform: scale(1.05);
+}
+
+/* 클릭할 때 */
+.back-button:active {
+    background: #4a007a;
+    transform: scale(0.95);
+}
+
+
+/* 학력 페이지 스타일 */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.education-card:hover {
+    transform: scale(1.03);
+}
+
+/* 학교 로고 */
+.school-logo {
+    width: 12%;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+/* 학력 정보 스타일 */
+.education-info {
+    text-align: left;
+}
+
+.education-info h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.education-info p {
+    margin: 7px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 링크 페이지 스타일 */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* 링크 버튼 스타일 */
+.link-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 12px;
+    background: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.link-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 버튼 호버 효과 */
+.link-button:hover {
+    background: #f0e6ff;
+    transform: scale(1.05);
+}
+
+/* 취미 페이지 스타일 */
+.hobby-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* 개별 취미 섹션 */
+.hobby-section {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 취미 제목 */
+.hobby-title {
+    font-size: 22px;
+    color: #6a0dad;
+    margin-bottom: 10px;
+}
+
+/* 취미 설명 */
+.hobby-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+/* 가로 스크롤 컨테이너 */
+.hobby-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE, Edge */
+}
+
+/* Chrome, Safari 스크롤바 숨기기 */
+.hobby-images::-webkit-scrollbar {
+    display: none;
+}
+
+/* 취미 이미지 */
+.hobby-image {
+    /* width: 250px; */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+
+.hobby-image:hover {
+    transform: scale(1.05);
+}
+
+/* 가로 스크롤 컨테이너 */
+.hobby-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scrollbar-width: thin;
+    /* Firefox: 스크롤바 얇게 */
+    scrollbar-color: #c5a3ff #f0e6ff;
+    /* 스크롤바 색상 */
+}
+
+/* Chrome, Safari에서 스크롤바 스타일 */
+.hobby-images::-webkit-scrollbar {
+    height: 8px;
+    /* 가로 스크롤바 높이 */
+}
+
+.hobby-images::-webkit-scrollbar-track {
+    background: #f0e6ff;
+    /* 트랙 색상 */
+    border-radius: 10px;
+}
+
+.hobby-images::-webkit-scrollbar-thumb {
+    background: #c5a3ff;
+    /* 스크롤바 색상 */
+    border-radius: 10px;
+}
+
+.hobby-images::-webkit-scrollbar-thumb:hover {
+    background: #a37edf;
+    /* 마우스 호버 시 강조 */
+}
